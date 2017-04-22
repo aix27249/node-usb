@@ -33,6 +33,8 @@
       },
       'defines': [
         'ENABLE_LOGGING=1',
+        'HAVE_STRUCT_TIMESPEC=1',
+        '_TIMESPEC_DEFINED=1'
       ],
       'cflags': [
         '-w',
@@ -111,8 +113,12 @@
             'libusb/libusb/os/threads_windows.c',
             'libusb/libusb/os/threads_windows.h',
             'libusb/libusb/os/windows_common.h',
-            'libusb/libusb/os/windows_usb.c',
-            'libusb/libusb/os/windows_usb.h',
+            'libusb/libusb/os/windows_nt_common.h',
+            'libusb/libusb/os/windows_nt_common.c',
+            'libusb/libusb/os/windows_winusb.c',
+            'libusb/libusb/os/windows_winusb.h',
+            'libusb/libusb/os/windows_usbdk.c',
+            'libusb/libusb/os/windows_usbdk.h',
             'libusb/msvc/config.h',
             'libusb/msvc/inttypes.h',
             'libusb/msvc/stdint.h',
